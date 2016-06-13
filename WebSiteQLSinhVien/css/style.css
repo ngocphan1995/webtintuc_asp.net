@@ -1,0 +1,108 @@
+body {
+    background-color: #e1e1e1 !important;
+    font-size: 13px !important;
+}
+.wrapper {
+    width:1180px;
+    margin:auto !important;
+    background-color: #fff !important;
+    border-color: #dcdcdc;
+    border-style: solid;
+    border-width: 0 1px 0 1px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.15);
+}
+.header {
+    height: 160px;    
+    background: url('../images/bg_banner.jpg')repeat-x left top;
+    text-align: center;
+}
+.bg-top{
+    width: 100%;
+    height: 2px;
+}
+.footer {
+    background-color:#34267B !important;
+    color:#fff;
+    padding: 10px;
+    margin-top: -5px !important;
+    height: 50px;
+    padding-right: 300px;
+}
+.content_default {
+    min-height:500px;
+}
+
+.left {
+   /*width:15%;*/ 
+    
+}
+.center {
+   /* width:65%;
+    border-right:1px dotted #fff;
+    border-left:1px dotted #fff;*/
+    float:left;
+    padding:5px;
+}
+.right {
+    /*width:20%;
+    border-right:1px dotted #fff;*/
+    float:left;
+
+   
+}
+.banner {
+    padding: 9px;
+    margin-top: 20px;
+}
+.quangcaophai {
+   
+    margin-left: 24px;
+    /* margin-top: 3px; */
+    padding-top: 13px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+}
+.row {
+    margin-bottom:5px;
+}
+.rpimg {
+    margin-left: 200px;
+}
+.gt {
+    width: 300px;
+    position: absolute;
+    top: 232px;
+    left: 685px;
+    background-image: url(../images/dddd.jpg);
+    width: 580px;
+    color: rgb(255, 255, 255); font-family: Arial;
+    text-align:center;
+    padding-top: 50px;
+}
+.navbar-inverse {
+    background-color: #34267B !important;
+    border-color: #34267B !important;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #52429E !important;
+}
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+   background-color: #52429E !important;
+         }
+.container-fluid {
+    font-size:16px !important;
+    font-weight:300;
+}
+li.active {
+    margin-left:-15px !important;
+}
+.nav > li {
+    margin-right: 20px !important;
+}
+.titile {
+    font-weight:500;
+    color:#34267B;
+}
