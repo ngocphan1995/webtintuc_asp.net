@@ -8,7 +8,7 @@
                     <i class="fa fa-user"></i>
                 </div>
                 <div class="value">
-                    <h1 class="count4"> <asp:Label ID="Label1" runat="server" OnLoad="Page_Load"></asp:Label></h1>
+                    <h1 > <asp:Label ID="Label1" runat="server" OnLoad="Page_Load"></asp:Label></h1>
                     <p>Người dùng</p>
                 </div>
             </section>
@@ -19,8 +19,8 @@
                     <i class="fa fa-graduation-cap"></i>
                 </div>
                 <div class="value">
-                    <h1 class="count2"><asp:Literal  runat="server" ID="ltrSVCount"/></h1>
-                    <p>Số sinh viên</p>
+                    <h1><asp:Literal  runat="server" ID="ltrSVCount"/></h1>
+                    <p>sinh viên</p>
                 </div>
             </section>
         </div>
@@ -30,8 +30,8 @@
                     <i class="fa fa-newspaper-o"></i>
                 </div>
                 <div class="value">
-                    <h1 class="count3"><asp:Literal  runat="server" ID="Literal1"/></h1>
-                    <p>Số bài viết</p>
+                    <h1><asp:Literal  runat="server" ID="ltrSVBV"/></h1>
+                    <p>bài viết</p>
                 </div>
             </section>
         </div>

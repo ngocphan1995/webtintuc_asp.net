@@ -78,12 +78,7 @@ public partial class CMS_danh_sach_the_loai : System.Web.UI.UserControl
             grdTheLoai.DataBind();
             conn.Close();
 
-            //cbTinh.DataSource = dt;
-            //cbTinh.DataValueField = "MaTinh";
-            //cbTinh.DataTextField = "TenTinh";
-            //cbTinh.DataBind();
-            //conn.Close();
-            //Dong ket noi
+            
         }
     }
     void read_data(int matheloai)

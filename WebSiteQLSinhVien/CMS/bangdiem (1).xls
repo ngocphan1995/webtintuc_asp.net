@@ -1,0 +1,43 @@
+<table border="1" width="100%">
+        <tr>            
+            <td>Mã Sinh Viên</td>
+            <td>Môn</td>
+            <td>Điểm TP</td>            
+            <td>Điểm Thi</td>
+            <td>Điểm Tổng Kết</td>
+            <td>Ngày Cập Nhật</td>
+            
+        
+
+        <tr>            
+            <td>1</td>
+            <td>CNPM</td>
+            <td>8</td>           
+            <td>5</td>
+            <td>5,9</td>
+            <td>07/06/2016 2:55:26 SA</td>
+            
+        </tr>
+    
+
+        <tr>            
+            <td>1</td>
+            <td>Máy Học</td>
+            <td>8</td>           
+            <td>8</td>
+            <td>8</td>
+            <td>07/06/2016 2:51:27 SA</td>
+            
+        </tr>
+    
+
+        <tr>            
+            <td>1</td>
+            <td>Java</td>
+            <td>6</td>           
+            <td>7</td>
+            <td>6,7</td>
+            <td>07/06/2016 2:51:43 SA</td>
+            
+        </tr>
+    </table>

@@ -76,9 +76,7 @@
         </asp:TemplateColumn>
         <asp:TemplateColumn HeaderText="Ảnh Đại Diện">
             <ItemTemplate>
-           <asp:Label runat="server" Text='<%#DataBinder.Eval(Container.DataItem, "Avata")%>'
-                   ID="image">
-                                                </asp:Label>
+         <image src="../Upload/images/<%# Eval("Avata") %>" style="width:65px;"></image>
            </ItemTemplate>
         </asp:TemplateColumn>
 
@@ -87,3 +85,4 @@
     </Columns>
     <PagerStyle Position="Bottom" Mode="NumericPages" CssClass="dg-pager"/>
 </asp:DataGrid>
+<asp:Button ID="btnExport" runat="server" Text="Tải về" OnClick = "ExportToExcel" />

@@ -69,3 +69,4 @@
     </ItemTemplate>
     <FooterTemplate></table></FooterTemplate>
 </asp:Repeater>
+<asp:Button ID="btnExport" runat="server" Text="Tải về" OnClick = "ExportToExcel" />

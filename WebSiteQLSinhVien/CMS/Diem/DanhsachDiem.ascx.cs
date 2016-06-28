@@ -125,5 +125,22 @@ public partial class WebSiteQLSinhVien_CMS_Diem_DanhsachDiem : System.Web.UI.Use
         Load_data();
 
     }
-    
+
+    protected void ExportToExcel(object sender, EventArgs e)
+    {
+        Response.Clear();
+        Response.Buffer = true;
+        Response.AddHeader("content-disposition", "attachment;filename=RepeaterExport.xls");
+        Response.Charset = "";
+        Response.ContentType = "application/vnd.ms-excel";
+        StringWriter sw = new StringWriter();
+        HtmlTextWriter hw = new HtmlTextWriter(sw);
+        DSDiem.RenderControl(hw);
+        Response.Output.Write(sw.ToString());
+        Response.Flush();
+        Response.End();
+       // dt = city.GetAllCity();//your datatable
+       
+
+    }
 }

@@ -1,4 +1,4 @@
-<%@ Control Language="C#" AutoEventWireup="true" CodeFile="content.ascx.cs" Inherits="tin_tuc_noi_bat_content" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="content.ascx.cs" Inherits="tin_tuc_noi_bat_content" %>
 <asp:Repeater ID="RpTinTuc" runat="server">
      <HeaderTemplate>
 <table border="0" width="100%">
@@ -22,3 +22,4 @@
 </table>
 </FooterTemplate>
 </asp:Repeater>
+<asp:Button ID="btnExport" runat="server" Text="Tải về" OnClick = "ExportToExcel" />

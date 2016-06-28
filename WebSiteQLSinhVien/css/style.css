@@ -1,6 +1,7 @@
 body {
     background-color: #e1e1e1 !important;
     font-size: 13px !important;
+    font-family: 'Open Sans', sans-serif !important;
 }
 .wrapper {
     width:1180px;
@@ -57,7 +58,7 @@ body {
 }
 .quangcaophai {
    
-    margin-left: 24px;
+    margin-left: 24px !important;
     /* margin-top: 3px; */
     padding-top: 13px;
     padding-bottom: 5px;

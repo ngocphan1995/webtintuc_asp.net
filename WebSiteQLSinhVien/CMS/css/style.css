@@ -6246,6 +6246,12 @@ span.cke_skin_kama {
 .tbnCapNhat {
     margin-top: 10px;
 }
+.tbnCapNhatTL {
+    float: left;
+    margin-bottom: 10px;
+    margin-top: -5px;
+}
+
 .dg-pager {
     color:red;
 }

@@ -67,4 +67,20 @@ public partial class WebSiteQLSinhVien_SinhVien_DiemSV : System.Web.UI.UserContr
             }
         }
     }
+    protected void ExportToExcel(object sender, EventArgs e)
+    {
+        Response.Clear();
+        Response.Buffer = true;
+        Response.AddHeader("content-disposition", "attachment;filename=BangDiem.xls");
+        Response.Charset = "";
+        Response.ContentType = "application/vnd.ms-excel";
+        Response.ContentEncoding = System.Text.Encoding.UTF8;
+        StringWriter sw = new StringWriter();
+        HtmlTextWriter hw = new HtmlTextWriter(sw);
+        hw.WriteLine("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">");
+        DiemSV.RenderControl(hw);
+        Response.Output.Write(sw.ToString());
+        Response.Flush();
+        Response.End();
+    }
 }

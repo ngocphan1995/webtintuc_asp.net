@@ -54,4 +54,15 @@ public partial class WebSiteQLSinhVien_CMS_SinhVien_Search : System.Web.UI.UserC
         ScriptManager.RegisterStartupScript(this, GetType(),
                               "ServerControlScript", script, true);
     }
+    protected void ExportToExcel(object sender, EventArgs e)
+    {
+         Response.ClearContent();
+         Response.AddHeader("content-disposition", "attachment; filename=gvtoexcel.xls");
+         Response.ContentType = "application/excel";
+         System.IO.StringWriter sw = new System.IO.StringWriter();
+         HtmlTextWriter htw = new HtmlTextWriter(sw);
+         grdDSSV.RenderControl(htw);
+         Response.Write(sw.ToString());
+         Response.End();
+    }
 }

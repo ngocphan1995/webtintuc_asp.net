@@ -9,6 +9,10 @@ using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Web.UI.HtmlControls;
 using System.Data.SqlClient;
+using System.Text;
+using System.IO;
+
+
 
 public partial class tin_tuc_noi_bat_content : System.Web.UI.UserControl
 {
@@ -55,5 +59,19 @@ public partial class tin_tuc_noi_bat_content : System.Web.UI.UserControl
     protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
     {
 
+    }
+    protected void ExportToExcel(object sender, EventArgs e)
+    {
+        Response.Clear();
+        Response.Buffer = true;
+        Response.AddHeader("content-disposition", "attachment;filename=RepeaterExport.txt");
+        Response.Charset = "";
+        Response.ContentType = "application/text";
+        StringWriter sw = new StringWriter();
+        HtmlTextWriter hw = new HtmlTextWriter(sw);
+        RpTinTuc.RenderControl(hw);
+        Response.Output.Write(sw.ToString());
+        Response.Flush();
+        Response.End();
     }
 }

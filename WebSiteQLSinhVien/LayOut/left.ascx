@@ -31,11 +31,10 @@
   </div>     
 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:D8CNPMConnectionString %>" SelectCommand="SELECT * FROM [tblTheLoai]"></asp:SqlDataSource>
 
-<img src="images/Libol.jpg"style="width: 270px;" />
- 
-<div style="margin-top:10px; ">
-<img src="images/ngon-ngu-lap-trinh-tot-nhat-28092015.jpg"style="width: 270px;border:1px solid #fff" />
-</div>
-<div style="margin-top:10px; ">
-<img src="images/MOBILE2.jpg"style="width: 270px;border:1px solid #fff" />
-</div>
+
+<asp:Repeater ID="Repeater1" runat="server" DataSourceID="SqlDataSource2">
+     <ItemTemplate>
+         <img src="Upload/images/quangcao/<%# Eval("HinhAnh") %>"style="width: 270px;border:1px solid #fff" />
+         </ItemTemplate>
+</asp:Repeater>
+<asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:D8CNPMConnectionString %>" SelectCommand="SELECT [HinhAnh]FROM [D8CNPM].[dbo].[QuangCao] where ViTriQuangCao='Bên Trái'"></asp:SqlDataSource>

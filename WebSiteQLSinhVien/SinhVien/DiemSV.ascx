@@ -4,9 +4,6 @@
     </div>
 <asp:Repeater ID="DiemSV" runat="server">
     <HeaderTemplate><table border="1" width="100%">
-        <div class="row">
-            <span><%# Eval("HoTen") %></span>
-        </div>
         <tr>            
             <td>Mã Sinh Viên</td>
             <td>Môn</td>
@@ -40,3 +37,4 @@
         <td><asp:Label ID="XepLoai" runat="server" Text=""></asp:Label></td>
     </tr>
 </table>
+<asp:Button ID="btnExport" runat="server" Text="Tải về" OnClick = "ExportToExcel" />

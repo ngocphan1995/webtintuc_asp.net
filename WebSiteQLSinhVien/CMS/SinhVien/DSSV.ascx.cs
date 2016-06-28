@@ -12,6 +12,8 @@ using System.Data.SqlClient;
 using System.IO;
 using System.Web.Script;
 using NgocPhan;
+using System.Drawing;
+
 public partial class WebSiteQLSinhVien_CMS_SinhVien_DSSV : System.Web.UI.UserControl
 {
     protected void Page_Load(object sender, EventArgs e)
@@ -225,7 +227,13 @@ public partial class WebSiteQLSinhVien_CMS_SinhVien_DSSV : System.Web.UI.UserCon
             Load_data();                    
         }
         }
-        
-    
-        
+
+    protected void grdTinBai_PageIndexChanged(object source, DataGridPageChangedEventArgs e)
+    {
+        grdDSSV.CurrentPageIndex = e.NewPageIndex;
+        Load_data();
+    }
+
+   
+       
 }

@@ -17,6 +17,7 @@ public partial class CMS_content : System.Web.UI.UserControl
         string c = Request.QueryString["content"];
         string b = Request.QueryString["MaTheLoai"];
         string a = Request.QueryString["MaBaiTin"];
+        string d = Request.QueryString["MaQuangCao"];
            if (c == "themtin")
                center.Controls.Add(LoadControl("TinTuc/ThemTinBai.ascx"));
            else if (c == "dstin" || a != null)
@@ -34,6 +35,7 @@ public partial class CMS_content : System.Web.UI.UserControl
            else if (c == "dsdiem") center.Controls.Add(LoadControl("Diem/DanhsachDiem.ascx"));
            else if (c == "themdiem") center.Controls.Add(LoadControl("Diem/ThemDiem.ascx"));
            else if (c == "timdiem") center.Controls.Add(LoadControl("Diem/TimDiem.ascx"));
+           else if (d != null) center.Controls.Add(LoadControl("QuangCao/ThemQC.ascx"));
            else
                center.Controls.Add(LoadControl("center.ascx"));
         

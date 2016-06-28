@@ -23,6 +23,8 @@ public partial class CMS_center : System.Web.UI.UserControl
                 Label1.Text = cmd.ExecuteScalar().ToString();
                 cmd = new SqlCommand("SELECT COUNT (*) FROM SinhVien", con);
                 ltrSVCount.Text = cmd.ExecuteScalar().ToString();
+                cmd = new SqlCommand("SELECT COUNT (*) FROM tblTinBai", con);
+                ltrSVBV.Text = cmd.ExecuteScalar().ToString();
             }
         }
     }

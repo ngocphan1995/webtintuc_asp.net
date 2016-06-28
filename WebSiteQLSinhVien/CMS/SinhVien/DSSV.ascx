@@ -66,7 +66,7 @@
         <asp:Button ID="btncapnhatSV" runat="server" Text="Cập Nhật" CssClass="btn btn-default" OnClick="btncapnhatSV_Click"/>
     </div>
 </div>
-<asp:DataGrid ID="grdDSSV" AutoGenerateColumns="False" runat="server" AllowPaging="True" PageSize="5"  CssClass="table table-bordered table-hover" OnItemCommand="Command">  
+<asp:DataGrid ID="grdDSSV" AutoGenerateColumns="False" runat="server" AllowPaging="True" PageSize="5"  CssClass="table table-bordered table-hover" OnItemCommand="Command" OnPageIndexChanged="grdTinBai_PageIndexChanged">  
     
      
      
@@ -151,4 +151,3 @@
     </Columns>
     <PagerStyle Position="Bottom" Mode="NumericPages" CssClass="dg-pager"/>
 </asp:DataGrid>
-
